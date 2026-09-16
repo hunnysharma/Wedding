@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Abhishek weds Yukta</title>
+<meta name="description" content="Abhishek & Yukta — four days of celebrations, 22 to 25 November 2026, Jhalawar, Rajasthan. Schedule, venues and directions." />
+<meta name="theme-color" content="#FBF3E8" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Abhishek weds Yukta" />
+<meta property="og:description" content="22–25 November 2026 · Jhalawar, Rajasthan. You are invited to our celebrations." />
+<meta property="og:image" content="assets/og-couple.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="assets/og-couple.jpg" />
+
+<link rel="icon" href="assets/logo.png" />
+<link rel="apple-touch-icon" href="assets/logo.png" />
+
+<link rel="preload" href="assets/fonts/Satoshi-300.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="assets/fonts/Satoshi-400.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-locked">
+
+<!-- ═════════ THE DARWAZA ═════════ -->
+<div class="gate" id="gate">
+  <div class="doors" aria-hidden="true">
+    <div class="door l"><span class="ring"></span></div>
+    <div class="door r"><span class="ring"></span></div>
+    <span class="valance"></span>
+  </div>
+  <div class="gate-masonry" aria-hidden="true">
+    <span class="jamb l"></span><span class="jamb r"></span>
+  </div>
+  <div class="gate-arch-wrap" aria-hidden="true"><img class="gate-arch" src="assets/wood-arch.svg" alt="" /></div>
+  <div class="gate-light" aria-hidden="true"></div>
+
+  <div class="plaque" id="plaque">
+    <figure class="arch arch-gate">
+      <img src="assets/ganpati.png" onerror="this.onerror=null;this.src='assets/ganpati.jpg'" alt="Shri Ganesh" width="560" height="751" />
+    </figure>
+    <p class="mantra">॥ श्री गणेशाय नमः ॥</p>
+    <h1 class="gate-names"><span>Abhishek</span><em>weds</em><span>Yukta</span></h1>
+    <p class="gate-meta">22 — 25 November 2026<br /><span>Jhalawar · Rajasthan</span></p>
+
+    <button class="open-btn" id="openBtn" type="button">
+      <span class="open-halo" aria-hidden="true"></span>
+      <span class="open-lead">पधारो सा</span>
+      <span class="open-sub">Tap to open the doors</span>
+    </button>
+  </div>
+</div>
+
+<div class="petals" id="petals" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<div class="yt-host" aria-hidden="true"><div id="ytHost"></div></div>
+<button class="music" id="musicBtn" type="button" hidden aria-label="Toggle music">
+  <span class="ms" id="musicIcon">volume_up</span>
+</button>
+
+<main id="main">
+
+  <!-- ═════════ HERO ═════════ -->
+  <header class="hero" id="top">
+    <div class="hero-card">
+      <figure class="arch arch-hero">
+        <img src="assets/ganpati.png" onerror="this.onerror=null;this.src='assets/ganpati.jpg'" alt="Shri Ganesh" width="560" height="751" loading="eager" />
+      </figure>
+      <p class="shloka">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ<br />निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा</p>
+      <p class="label hero-label">Together with our families</p>
+      <h1 class="hero-names">
+        <span class="hn">Abhishek</span>
+        <span class="hn-rule"><i></i><em>weds</em><i></i></span>
+        <span class="hn">Yukta</span>
+      </h1>
+      <p class="hero-date">22 — 25 November 2026</p>
+      <p class="hero-place">Jhalawar · Rajasthan</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#schedule">
+          <span class="ms">event_note</span>View Schedule
+          <span class="ms btn-go">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═════════ COUNTDOWN ═════════ -->
+  <section class="band" id="countdown" aria-label="Countdown">
+    <div class="wrap">
+      <p class="label center" id="cdNote">Until the phere</p>
+      <div class="cd">
+        <div class="cd-cell"><span class="cd-n" data-cd="d">--</span><span class="cd-l">Days</span></div>
+        <div class="cd-cell"><span class="cd-n" data-cd="h">--</span><span class="cd-l">Hrs</span></div>
+        <div class="cd-cell"><span class="cd-n" data-cd="m">--</span><span class="cd-l">Min</span></div>
+        <div class="cd-cell"><span class="cd-n" data-cd="s">--</span><span class="cd-l">Sec</span></div>
+      </div>
+      <p class="cd-target" id="cdTarget"></p>
+    </div>
+  </section>
+
+  <!-- ═════════ SCHEDULE ═════════ -->
+  <section class="section" id="schedule">
+    <div class="wrap">
+      <h2 class="h2 center">The Schedule</h2>
+      <div class="orn center" aria-hidden="true"><svg viewBox="0 0 220 20"><use href="#ic-orn"/></svg></div>
+    </div>
+
+    <nav class="daynav" id="daynav" aria-label="Jump to a day">
+      <div class="daynav-track" id="daynavTrack"></div>
+    </nav>
+
+    <div class="wrap">
+      <div class="days" id="days"></div>
+      <div class="center stack-cta">
+        <button class="btn btn-ghost" id="allCalBtn" type="button">
+          <span class="ms">calendar_add_on</span>Add All to Calendar
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ INVITATION NOTE ═════════ -->
+  <section class="section" id="invitation">
+    <div class="wrap">
+      <div class="note">
+        <figure class="note-art">
+          <img src="assets/couple.jpg" alt="Illustration of Abhishek and Yukta" loading="lazy" width="820" height="1458" />
+        </figure>
+        <div class="note-text">
+          <p class="label">Aap sabhi amantrit hain</p>
+          <h2 class="h2">You are invited</h2>
+          <p>Some moments are far too precious to celebrate alone. As <strong>Abhishek</strong> begins a new chapter with <strong>Yukta</strong>, we ask for your presence, your blessings and your laughter through four days of rasams, colour and music.</p>
+          <p class="note-sign" id="familyLine">— With all our love</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════ VENUES ═════════ -->
+  <section class="section" id="venues">
+    <div class="wrap">
+      <p class="label center">Getting there</p>
+      <h2 class="h2 center">Venues</h2>
+      <div class="orn center" aria-hidden="true"><svg viewBox="0 0 220 20"><use href="#ic-orn"/></svg></div>
+      <div class="venues" id="venueGrid"></div>
+    </div>
+  </section>
+
+  <!-- ═════════ RSVP (hidden until filled in) ═════════ -->
+  <section class="section" id="rsvp" hidden>
+    <div class="wrap">
+      <p class="label center">Do let us know</p>
+      <h2 class="h2 center">RSVP</h2>
+      <div class="rsvp" id="rsvpGrid"></div>
+    </div>
+  </section>
+
+  <!-- ═════════ FOOTER ═════════ -->
+  <footer class="footer">
+    <div class="wrap">
+      <img class="foot-logo" src="assets/logo.png" alt="" width="74" height="81" />
+      <h2 class="foot-names">Abhishek &amp; Yukta</h2>
+      <p class="foot-hash" id="hashLine">#AbhishekWedsYukta</p>
+      <div class="foot-cta">
+        <button class="btn btn-ghost" id="shareBtn" type="button"><span class="ms">ios_share</span>Share Invite</button>
+        <a class="btn btn-ghost" href="#top"><span class="ms">arrow_upward</span>Back to Top</a>
+      </div>
+      <p class="foot-fine">See you at the celebrations.</p>
+    </div>
+  </footer>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="ic-orn" viewBox="0 0 220 20">
+    <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+      <path d="M4 10h66" opacity=".5"/><path d="M150 10h66" opacity=".5"/>
+      <path d="M110 3c6 3.5 9 5.5 9 7s-3 3.5-9 7c-6-3.5-9-5.5-9-7s3-3.5 9-7z"/>
+      <circle cx="110" cy="10" r="2" fill="currentColor" stroke="none"/>
+      <path d="M79 10c4-4 8-4 12 0-4 4-8 4-12 0z"/><path d="M129 10c4-4 8-4 12 0-4 4-8 4-12 0z"/>
+    </g>
+  </symbol>
+</svg>
+
+<script src="script.js"></script>
+</body>
+</html>
