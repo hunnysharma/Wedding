@@ -281,6 +281,7 @@ body.no-symbols .ms{display:none}
 .hero-date{margin:20px 0 4px;font-size:clamp(16px,4.4vw,21px);font-weight:700;color:var(--ink)}
 .hero-place{margin:0;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
 .hero-cta{display:flex;flex-direction:column;align-items:center;gap:11px;margin-top:26px}
+.hero-cta .btn{width:100%;max-width:320px}
 
 /* staggered entrance once the doors open */
 body.opened .hero-card > *{animation:riseIn .7s cubic-bezier(.22,.8,.3,1) both}
@@ -298,7 +299,7 @@ body.opened .hero-card > *:nth-child(7){animation-delay:.42s}
   position:relative;display:inline-flex;align-items:center;justify-content:center;gap:9px;
   width:100%;max-width:320px;padding:14px 24px;border-radius:999px;cursor:pointer;
   font-family:var(--f);font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
-  text-decoration:none;border:1px solid transparent;overflow:hidden;
+  text-decoration:none;border:1px solid transparent;overflow:hidden;white-space:nowrap;
   transition:transform .22s ease,box-shadow .22s ease,background .22s ease,border-color .22s ease,color .22s ease;
 }
 .btn .ms{font-size:18px}
