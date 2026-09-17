@@ -20,9 +20,11 @@ const WEDDING = {
   /* Background music: a YouTube video, started from `startAt` seconds on open. */
   music: { videoId: 'SQ4jZ-EAL88', startAt: 20, volume: 30 },
 
-  /* Add entries to reveal the RSVP section:
-     { name: 'Rahul Sharma', role: 'Brother of the groom', phone: '+919876543210' } */
-  rsvp: [],
+  /* Shown in the RSVP section. Add a name in place of the number if you'd rather. */
+  rsvp: [
+    { name: '+91 95290 95302', role: 'Tap to call', phone: '+919529095302' },
+    { name: '+91 96948 43113', role: 'Tap to call', phone: '+919694843113' }
+  ],
 
   venues: {
     home: {
